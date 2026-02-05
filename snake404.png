@@ -1,8 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Snake-404</title>
+</head>
+
 <body>
-
-<h1>404</h1>
-<p>YOU WERE NOT SUPPOSED TO BE HERE.</p>
-
-<img src="snake404.png" alt="Snake-404">
-
+<img src="snake404.png">
 </body>
+
+</html>
