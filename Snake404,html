@@ -49,4 +49,3 @@ document.getElementById("snake").onclick = function() {
 
 </body>
 </html>
-<img src="snake404.png">
