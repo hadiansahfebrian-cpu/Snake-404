@@ -7,22 +7,28 @@
 <style>
 body {
     background-color: black;
-    color: #00FF00;
+    color: #00ff00;
     font-family: monospace;
     text-align: center;
     margin-top: 80px;
 }
 
 img {
-    width: 300px;
+    width: 280px;
+    margin-top: 30px;
     cursor: pointer;
+    filter: grayscale(100%);
 }
 
-.clue {
+.hidden {
     display: none;
     margin-top: 20px;
-    color: #FF00FF;
-    font-weight: bold;
+    color: #ff00ff;
+}
+
+/* jika gambar ditekan */
+img:active + .hidden {
+    display: block;
 }
 </style>
 </head>
@@ -30,22 +36,27 @@ img {
 <body>
 
 <h1>404</h1>
-<p>YOU WERE NOT SUPPOSED TO FIND THIS.</p>
-<p>THE SNAKE DOES NOT MOVE FORWARD.<br>
-IT CIRCLES BACK.</p>
-<p>LOOK AT THE IMAGE BELOW.</p>
+<p>YOU WERE NOT SUPPOSED TO BE HERE.</p>
 
-<!-- GAMBAR ULAR -->
-<img src="snake404.png" alt="Snake-404" id="snake">
+<p>
+THE SNAKE DOES NOT MOVE FORWARD.<br>
+IT RETURNS TO WHAT IT ONCE WAS.
+</p>
 
-<!-- CLUE RAHASIA -->
-<p class="clue" id="clue">Base64: U05BS0UtNDA0</p>
+<p>LOOK CLOSER.</p>
 
-<script>
-document.getElementById("snake").onclick = function() {
-    document.getElementById("clue").style.display = "block";
-};
-</script>
+<!-- Gambar Puzzle -->
+<img src="snake404.png" alt="Snake-404">
+
+<!-- Clue tersembunyi -->
+<p class="hidden">
+U05BS0UtNDA0
+</p>
+
+<!--
+If you can read this,
+you already know what to do.
+-->
 
 </body>
 </html>
